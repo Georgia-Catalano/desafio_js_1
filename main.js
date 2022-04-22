@@ -1,3 +1,4 @@
+//Desafio Complementario 1
 /*let puesto = prompt("Ingrese un numero que indique su puesto final en la carrera o escriba ESC si desea salir");
 while(puesto !="ESC"){
     switch (puesto) {
@@ -18,6 +19,8 @@ puesto=prompt("Ingrese un numero que indique su puesto final en la carrera o esc
 }
 */
 
+//Desafio Entregable 1 
+
 /*function solicitarValor(){
     let nombre= prompt("Por favor ingrese su nombre:");
     let valor = parseFloat(prompt("Por favor, ingrese el monto que desea adquirir para conocer el valor total de su credito. Se consideran válidos sólo números enteros.)"));
@@ -32,7 +35,10 @@ puesto=prompt("Ingrese un numero que indique su puesto final en la carrera o esc
 
 solicitarValor();
 */
-let puesto=prompt("Ingrese un numero que indique su puesto final en la carrera o escriba ESC si desea salir");
+
+//Desafio Entregable 1 
+
+/* let puesto=prompt("Ingrese un numero que indique su puesto final en la carrera o escriba ESC si desea salir");
 function podio(){
     while(puesto !="ESC"){
         switch (puesto) {
@@ -53,3 +59,20 @@ function podio(){
     }
 }
 podio();
+*/
+
+//Desafio Entregable 1 
+
+/* function podio (){
+    let nombre = prompt("Ingrese su nombre")
+    let puesto= prompt ("¿En que lugar llego a la meta?"); 
+    if (puesto == 1) {
+        console.log (nombre +" Ganaste");
+    } else {
+        console.log (nombre + " No ganaste");
+    }
+
+}
+
+podio();
+*/
