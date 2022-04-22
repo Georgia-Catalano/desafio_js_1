@@ -1,4 +1,4 @@
-let puesto = prompt("Ingrese un numero que indique su puesto final en la carrera o escriba ESC si desea salir");
+/*let puesto = prompt("Ingrese un numero que indique su puesto final en la carrera o escriba ESC si desea salir");
 while(puesto !="ESC"){
     switch (puesto) {
         case "1":
@@ -16,3 +16,18 @@ while(puesto !="ESC"){
     }
 puesto=prompt("Ingrese un numero que indique su puesto final en la carrera o escriba ESC si desea salir");
 }
+*/
+
+function solicitarValor(){
+    let nombre= prompt("Por favor ingrese su nombre:");
+    let valor = parseFloat(prompt("Por favor, ingrese el monto que desea adquirir para conocer el valor total de su credito. Se consideran válidos sólo números enteros.)"));
+    let interes = 5;
+    let totalPrestamo = valor * interes ;
+
+    console.log("Usted desea adquirir $" + valor + ".");
+    console.log("La suma total que debera abonar por su prestamo sera de $" + totalPrestamo + ". Cuenta con 5 cuotas mensuales para liquidar el mismo.");
+    let idcliente = nombre + " " + totalPrestamo;
+
+}
+
+solicitarValor();
