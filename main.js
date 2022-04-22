@@ -18,7 +18,7 @@ puesto=prompt("Ingrese un numero que indique su puesto final en la carrera o esc
 }
 */
 
-function solicitarValor(){
+/*function solicitarValor(){
     let nombre= prompt("Por favor ingrese su nombre:");
     let valor = parseFloat(prompt("Por favor, ingrese el monto que desea adquirir para conocer el valor total de su credito. Se consideran válidos sólo números enteros.)"));
     let interes = 5;
@@ -31,3 +31,25 @@ function solicitarValor(){
 }
 
 solicitarValor();
+*/
+let puesto=prompt("Ingrese un numero que indique su puesto final en la carrera o escriba ESC si desea salir");
+function podio(){
+    while(puesto !="ESC"){
+        switch (puesto) {
+            case "1":
+                console.log("Medalla de oro");
+                break;
+            case "2":
+                console.log("Medalla de plata");
+                break;
+            case "3":
+                console.log("Medalla de bronce");
+                break;
+            default:
+                console.log("No ingresaste al podio");
+                break;
+        }
+    puesto=prompt("Ingrese un numero que indique su puesto final en la carrera o escriba ESC si desea salir");
+    }
+}
+podio();
