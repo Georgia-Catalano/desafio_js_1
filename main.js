@@ -76,3 +76,34 @@ podio();
 
 podio();
 */
+
+
+// DESAFIO PRE ENTREGA 1
+
+//ARRAY
+const medallas = [{id:1, medalla:"Oro"},
+                {id:2, medalla:"Plata"},
+                {id:3, medalla:"Bronce"} ]
+
+//DECLARACION DE VARIABLE PUESTO PARA INGRESAR PUESTO EN LA CARRERA                
+let puesto= parseFloat (prompt("Ingrese numero de llegada"))
+//TIPOS DE BUSQUEDA QUE REALIZO EN ARRAY PARA VERIFICAR SI EL PUESTO INGRESADO TIENE UNA MEDALLA
+const busqueda= medallas.find(medalla => medalla.id===puesto)
+//console.log(busqueda)
+const resultado = medallas.some(medalla => medalla.id===puesto)
+//console.log(resultado)
+//FUNCION QUE ME PERMITE CONOCER SI TENGO QUE OTORGAR UNA MEDALLA O NO
+function darMedalla(){
+//return console.log(busqueda) &&
+//        console.log(resultado)
+if (resultado ===true) {
+    console.log("Ingreso al podio")
+    console.log(busqueda);
+
+} else {
+    console.log("No ingreso al podio")
+}
+}
+darMedalla()
+
+
