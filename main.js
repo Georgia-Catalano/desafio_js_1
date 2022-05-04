@@ -79,7 +79,7 @@ podio();
 
 
 // DESAFIO PRE ENTREGA 1
-
+/*
 //ARRAY
 const medallas = [{id:1, medalla:"Oro"},
                 {id:2, medalla:"Plata"},
@@ -105,5 +105,32 @@ if (resultado ===true) {
 }
 }
 darMedalla()
+*/
 
+DESAFIO EVENTOS
+
+//EVENTOS BOTONES
+
+let boton = document.getElementById("boton");
+boton.onclick=()=> {console.log("Click")}
+boton.onmousemove=()=> {console.log("pasaste sobre el boton pero no hiciste click")}
+
+//EVENTO TECLADO
+// input ejemplo 1
+let inputNombre = document.getElementById("usuario")
+let inputContrasena= document.getElementById("contraseña")
+
+inputNombre.onkeyup= () => {console.log("Nombre usuario")}
+inputContrasena.onkeydown=() => {console.log("Cantidad digitos")}
+
+// formulario ejemplo 2
+let formulario = document.getElementById("formulario")
+formulario.addEventListener("submit",validarformulario)
+
+function validarformulario(e){
+    e.preventDefault();
+    let datosformulario = e.target
+    console.log(formulario.children[0].value);
+    console.log(formulario.children[1].value);
+}
 
